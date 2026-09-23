@@ -73,7 +73,7 @@ def admin_dashboard():
             view_user()
         elif ch==7:#view orders
             view_orders()
-        elif ch==8:#logout-----need to get the main menu but it is asking again username and passsword
+        elif ch==8:#logout
             print('---Admin Logged out---')
             return
         else:#invaild
@@ -141,7 +141,7 @@ def delete_product():
             
 #------------SEARCH PRODUCT---------------
             
-def search_product():#getting not found anii 3 times vasthundhii
+def search_product():#
     product_name=input('Enter product name:')
     for product_id, product in products.items():
         if product_name.lower() in product["name"].lower():
